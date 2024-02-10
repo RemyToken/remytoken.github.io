@@ -1,0 +1,210 @@
+HTML, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #858585;
+}
+
+.header {
+    position: fixed;
+    overflow: hidden;
+    padding: 8px 4px;
+    z-index: 3;
+    background-color: white;
+  }
+
+.header-right a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin-right: 1vw;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    transform: translateY(50%);
+  }
+  
+.header .logo {
+    width: 8%;
+    min-width: 200px;
+    padding-left: 0.7%;
+  }
+  
+.header a:hover {
+    color: rgb(105, 105, 105);
+  }
+  
+.header-right {
+    float: right;
+  }
+
+.header-space {
+  height: 109px;
+}
+  
+  
+ /* @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }*/
+
+.intro {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+  }
+
+.intro .background {
+    width: 100%;
+    z-index: -1;
+  }
+
+.intro .div-on-image {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    height: 50%;
+    color: white;
+    text-size-adjust: 80%;
+    line-height: 5%;
+  }
+
+.div-on-image .text-logo {
+    width: 20%;
+  }
+
+.intro .logo-on-image {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  text-align: center;
+}
+
+.intro .logo-on-image img {
+  width: 60%;
+}
+
+  .intro .title {
+    font-size: 3vw;
+    margin-top: 5%;
+  }
+  .intro .text {
+    font-size: 2vw;
+  }
+
+  .intro .line {
+    height: 2px;
+    background-color: white;
+    width: 46vw;
+  }
+
+.intro .action {
+  width: 100%;
+  height: 15%;
+  margin-top: 10%;
+}
+
+#jupiter-buy-button {
+  background-color: transparent;
+  border-color: white;
+  height: 100%;
+  width: 30%;
+  border-radius: 1em;
+  border-width: 4px;
+  margin:auto;
+  border-style: solid;
+  font-size: 1.4vw;
+  color: black;
+  background-color: white;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#jupiter-buy-button img {
+  height: 60%;
+  vertical-align: middle;
+  padding-left: 5%;
+}
+
+.action .telegram {
+  height: 100%;
+  vertical-align: middle;
+  padding-left: 1.2%;
+}
+
+  .tokenomics {
+    height: 1000px;
+  }
+
+  .tokenomics .title {
+    text-align: center;
+    
+  }
+
+.bottom-div {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  bottom:0;
+  vertical-align: bottom;
+}
+
+
+@media screen and (max-width: 800px) {
+  .intro .logo-on-image {
+    display: none;
+  }
+  .intro .div-on-image {
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    height: 65%;
+    text-align: center;
+  }
+  .intro .title {
+    font-size: 5vw;
+  }
+  .intro .text {
+    font-size: 3vw;
+  }
+  .intro .line {
+    margin: auto
+  }
+  .div-on-image .text-logo {
+    content:url("/images/Logo-white.png");
+    width: 30%;
+  }
+  .intro .action {
+    margin-top: 0%;
+  }
+}
